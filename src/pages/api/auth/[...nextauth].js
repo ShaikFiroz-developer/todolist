@@ -8,7 +8,8 @@ const options = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
-  // Additional NextAuth.js configurations can go here
+
+  secret: process.env.NEXTAUTH_SECRET,
 };
 
 export default NextAuth(options);
