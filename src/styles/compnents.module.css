@@ -1,0 +1,121 @@
+.sidenav::-webkit-scrollbar {
+  width: 0;
+}
+.Navbar {
+  height: 7vh;
+  display: flex;
+  background-color: #192127;
+  align-items: center;
+  justify-content: space-between;
+}
+.Historycard {
+  width: 90%;
+  height: 50px;
+  background-color: rgb(18, 18, 18);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.displaccardpromotion {
+  width: 310px;
+  height: 80px;
+  padding-left: 10px;
+  background-color: #15232d;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+}
+
+.displaypromotiondivsovterdiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  width: calc(70vw - 300px);
+  gap: 10px;
+  margin-top: 30vh;
+  min-width: 310px;
+  place-items: center;
+  height: fit-content;
+}
+.displaypromotiondivsovterdiv::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Media query for small screens (max-width: 767px) */
+@media (max-width: 1000px) {
+  .sidenav {
+    width: 100vw;
+  }
+  .Navbar {
+    width: 100vw;
+  }
+  .displaypromotiondivsovterdiv {
+    margin-top: 20vh;
+    place-items: start;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .displaccardpromotion {
+    width: 240px;
+    height: 100px;
+    padding-left: 10px;
+    background-color: #15232d;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .displaypromotiondivsovterdiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    width: calc(70vw - 200px);
+    gap: 10px;
+    min-width: 310px;
+    margin-top: 25vh;
+  }
+}
+
+@media (min-width: 1151px) and (max-width: 1460px) {
+  .displaccardpromotion {
+    width: 230px;
+    height: 100px;
+    padding-left: 10px;
+    background-color: #15232d;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .displaypromotiondivsovterdiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    width: calc(70vw - 300px);
+    gap: 10px;
+    min-width: 310px;
+    margin-top: 25vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .displaccardpromotion {
+    width: 308px;
+    height: 80px;
+    padding-left: 10px;
+    background-color: #15232d;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .displaypromotiondivsovterdiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: calc(70vw - 300px);
+    gap: 10px;
+    min-width: 310px;
+    margin-top: 0px;
+  }
+}

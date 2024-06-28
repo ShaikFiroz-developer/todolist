@@ -1,0 +1,7 @@
+.scrollbar {
+  overflow: scroll;
+  color: black;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
